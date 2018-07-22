@@ -1,0 +1,21 @@
+.apt-showcase-main {
+  background-image: url('showcase_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // height: 600px;
+}
+
+.apt-showcase-dls {
+  li {
+    color: white;
+    background: transparent;
+    border-color: white;
+  }
+}
+
+.apt-showcase-card-desc {
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+}

@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('downloads');
+  this.route('guides');
 });
 
 export default Router;
