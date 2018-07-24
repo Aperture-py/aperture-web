@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('downloads');
   this.route('guides');
+  this.route('privacy');
 });
 
 export default Router;
