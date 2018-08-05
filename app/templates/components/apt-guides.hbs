@@ -1,0 +1,157 @@
+<h2>Guides</h2>
+<p>This page contains guides for the Aperture application and command line interface (CLI).
+</p>
+<div class="py-4"></div>
+<h3>CLI</h3>
+<hr>
+<p>
+  <small>Note: You must have Python 3.6 installed to use the CLI.</small>
+</p>
+<h5>Installation</h5>
+<ol>
+  <li>
+    Install the CLI using pip:
+    <br>
+    <code>$ pip install aperture-cli</code>
+  </li>
+  <li>
+    Verify the installation:
+    <br>
+    <code>$ aperture --version</code>
+    <br>
+    <small>If the installation was successfull, the output of the above command should be the following:
+      <code>$ 1.0.0</code>
+    </small>
+  </li>
+</ol>
+<h5>Usage</h5>
+<p>You can read about proper usage patterns for the CLI by running aperture without any arguments.
+</p>
+<div class="py-4"></div>
+<h3>Web and Desktop App</h3>
+<hr>
+<h5>Installation</h5>
+<ul style="list-style: none;">
+  <li>
+    Web App
+    <br>
+    <small>No installation required for the Web App. You can check it out
+      <a href="https://app.aperture.run" target="_blank">here!</a>
+    </small>
+  </li>
+  <li>
+    Desktop App
+    <ol>
+      <li>Navigate to the
+        {{#link-to 'downloads'}}Downloads{{/link-to}} page.
+      </li>
+      <li>Click the 'Download' button under the approriate download for your platform.</li>
+      <li>Extract the contents of the zip file to a location of your choosing.</li>
+      <li>Run the 'Aperture' exectuable from within the extracted directory to verify successful installation.</li>
+    </ol>
+  </li>
+</ul>
+<h5>Usage</h5>
+<ul style="list-style: none;">
+  <li>After launching the Aperture application, begin by dragging and dropping images onto the dropzone in the center of the
+    screen. Your images should appear in a screen like the following:
+  </li>
+  <li class="py-4">
+    <div class="apt-img-guide apt-img-main mx-auto"></div>
+  </li>
+  <li>This page contains all of the image formatting power that Aperture provides through the use of 3 core sections: Watermarking,
+    Resizing and Images.</li>
+  <li>
+    <ul>
+      <li>
+        <span class="text-primary">Watermarking</span> - The Watermarking section allows you to provide a watermark image and text that will be applied
+        to all of your images.
+        <ul>
+          <li>
+            To add an watermark image, drag and drop the desired image onto the dropzone in the section.
+          </li>
+          <li>
+            To add text, type the desired text into the input field below the dropzone.
+          </li>
+        </ul>
+        <small>Note: Your watermark image and text will be placed in the lower right-hand corner of the image, with the text being
+          placed below the watermark image.</small>
+      </li>
+      <li>
+        <span class="text-primary">Resizing</span> - The Resizing section allows you to create image resolutions that you want applied to your uploaded
+        images, effectively creating resized copies of your images. This is particularly useful for displaying different
+        sized images depending on the device type using your application.
+        <ul>
+          <li>To create a resolution, click the 'Add Resolution' button and fill out the required fields.</li>
+        </ul>
+      </li>
+      <li>
+        <span class="text-primary">Images</span> - The images section contains all of the images from your initial upload, and allows you to upload
+        more images with a max 'total image upload' of 50 MB. You can also specify the quality level that will be used when
+        compressing your images. Lastly, you can apply custom settings for a particular image if you don't want a particular
+        setting to be applied to the image.</li>
+      <ul>
+        <li>
+          To upload more images, drag and drop the images onto the existing images in the dropzone.
+        </li>
+        <li>
+          To remove an image, hover over it and click the 'x' in the upper right-hand corner.
+        </li>
+        <li>
+          To specify the quality level used for compression, enter the value into the input field labeled 'Image Quality'.
+        </li>
+        <li>To override the settings for a particular image, click on the image and modify the desired fields.</li>
+        <li>To format your images, click the 'Upload Images' button.</li>
+      </ul>
+    </ul>
+  </li>
+  <li>After you have clicked the 'Upload Images' button and the image processing has complete, you will be taken to the downloads
+    page that looks like the following (different for the Web and Desktop App):
+    <div class="text-center py-2">
+      <span class="pb-2 font-weight-bold">Web App Download Page</span>
+      <div class="apt-img-guide apt-img-web-dl mx-auto"></div>
+    </div>
+  </li>
+  <li>
+    Both the Web and Desktop App allow you to save a zipfile with the processed images. However, the Web App also allows you
+    to save the images to your Google Drive, where the Desktop App will instead allow you to save the image files to a folder
+    on your system directly.
+  </li>
+  <li>Aside from downloading your images, this page also allows you to view the results for each image that was processed by
+    Aperture by clicking the 'View Detailed Results' button.
+  </li>
+  <li>Lastly, the 'Continue Where I Left Off' and 'Start Over' buttons allow you to choose the next course of action post-download.</li>
+</ul>
+{{!-- <h2>Guides</h2>
+<p>This page contains guides on how to use the Aperture application and command line interface (CLI).
+</p>
+<p>Below you will find guides for how to use the application and the command line interface. It is recommended that non-experienced
+  developers should use the web and desktop app. The web app may be found
+  <a href="https://app.aperture.run/">here</a>, while the desktop application may be downloaded from the
+  <i>Downloads</i> page.
+</p>
+<div class="py-4"></div>
+<h3 id="app">App</h3>
+<p>The web and desktop applications both share a lot of the same functionality.</p>
+<h3 id="cli">CLI</h3>
+<p>
+  The command line interface provides the user with a powerful tool for every feature which Aperture has to offer. Developers
+  familiar with using a terminal or command prompt should be able to use this tool very easily.
+</p>
+<h4>Installation</h4>
+<p>
+  The CLI requires python3.xxxxxx installed and may be installed by simply running:
+</p>
+<span class="term">pip install aperture-cli</span>
+<p>
+  To verify that the tool has been successfully installed, try running:
+</p>
+<span class="term">aperture</span>
+<p>
+  If you are not met with an error message and instead presented with help text, then you are set.
+</p>
+<h4>Options</h4>
+<h4>Aperture File</h4>
+<p>
+  You may choose to provide
+</p> --}}
